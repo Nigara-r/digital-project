@@ -1,0 +1,18 @@
+.parking{
+      &__item_1 {
+          padding-left: 25px;
+          background-color: $color-section;
+          height: 435px;
+
+      }
+      .col-7 {
+          width: 58.3333%;
+          padding-left: 30px;
+      }
+      .col-12{
+          margin-bottom: 30px;
+      }
+      &__row{
+          padding-bottom: 30px;
+      }
+}

@@ -1,0 +1,22 @@
+@import "./fonts/TTHoves";
+@import "./mixins";
+@import "./variables";
+@import "./base";
+
+// Components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/tasks";
+@import "./components/projects";
+@import "./components/contacts";
+@import "./components/footer";
+// Vendors
+
+//pages
+@import "./pages/gallery";
+@import "./pages/projects";
+@import "./pages/certificate";
+@import "./pages/parking";
+
+@import "./vendors/slick";
