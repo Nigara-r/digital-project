@@ -104,3 +104,17 @@
     }
     }
 
+
+
+
+    
+    @media screen and (max-width: 576px){
+    .our-projects {
+       &__title{
+       font-size: 22px;
+       } 
+       &__description{
+           font-size: 15px;
+       }
+    }
+    }

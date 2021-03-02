@@ -36,6 +36,46 @@
     </header>
     <main>
 
+<div class="modal">
+    <form class="modal__form">
+        <h3 class="modal__title">Задать вопрос<svg class="modal__close" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.35355" y1="0.646447" x2="15.3536" y2="14.6464" stroke="#C1C1C1" />
+            <line x1="0.646447" y1="14.6464" x2="14.6464" y2="0.646448" stroke="#C1C1C1" />
+        </svg>
+        </h3>
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="text" name="phone" placeholder="Номер телефона*" />
+        <input type="text" name="email" placeholder="E-mail*" />
+        <input type="text" name="product" placeholder="Интересующий товар/услуга" />
+
+        <textarea class="modal__textarea" placeholder="Сообщение*" name="description" id="" cols="30" rows="10"></textarea>
+        <input class="modal-checkbox__input" id="modal__checkbox" type="checkbox" />
+        <label required for="modal__checkbox" class="modal__checkbox">
+            <span class="modal__description">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</span>
+        </label>
+        <button type="submit" class="about__link modal__btn" href="">ОТПРАВИТЬ</button>
+    </form>
+
+</div>
+<div class="modal-thanks">
+  <div class="modal-thanks__wrapper">
+        <svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M71 112C93.6437 112 112 93.6437 112 71C112 48.3563 93.6437 30 71 30C48.3563 30 30 48.3563 30 71C30 93.6437 48.3563 112 71 112Z"
+                fill="#0DC332" />
+            <path
+                d="M133.5 71C133.5 105.518 105.518 133.5 71 133.5C36.4822 133.5 8.5 105.518 8.5 71C8.5 36.4822 36.4822 8.5 71 8.5C105.518 8.5 133.5 36.4822 133.5 71Z"
+                stroke="#D1D1D1" />
+            <path d="M92 56L66.1538 85L50 72.1111" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <h3 class="modal-thanks__title">Спасибо !</h3>
+        <p class="modal-thanks__description">Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+        <button class="about__link modal-thanks__btn">ВЕРНУТЬСЯ НАЗАД</button>
+  </div>
+</div>
+
+
         <section class="contacts">
             <div class="container">
                 <div class="contacts__row row">
@@ -181,6 +221,7 @@
         <div class="footer__line"></div>
         <p class="footer__foot">© 2019 Digital Project. Все права защищены.</p>
     </footer>
+   
      <script>
         let map;
 
@@ -192,8 +233,15 @@
         }
     </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJawQFy7MNh_QGQgzo9s4M5QTLxoEtee8&callback=initMap&libraries=&v=weekly"
-    async></script>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/contacts.js"></script>
+<script src="./js/script.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJawQFy7MNh_QGQgzo9s4M5QTLxoEtee8&callback=initMap&libraries=&v=weekly"
+    async>
+</script>
+
 </body>
 
 </html>
