@@ -32,6 +32,13 @@
         outline: none;
         cursor: pointer;
     }
-    
+}
 
+
+@media screen and (max-width: 576px) {
+ .contacts {
+       &__btn {
+           margin-bottom: 30px;
+       }
+ }
 }

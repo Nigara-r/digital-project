@@ -1,0 +1,110 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+    &__form {
+        padding: 40px 25px;
+        max-width: 500px;
+        background-color: white;
+    }
+
+    input,
+    textarea {
+        @include font(14px, 400, 1.1, none);
+        padding: 15px 20px;
+        font-size: 14px;
+        width: 100%;
+        margin: 5px;
+        box-sizing: border-box;
+        background-color: $color-background;
+        border: none;
+        outline: none;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: none;
+        margin-bottom: 10px;
+    }
+
+    &-checkbox__input {
+
+        width: auto !important;
+    }
+
+    &__btn {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    &__title {
+        @include font(21px, 700, 1.1, none, );
+        color: $color-black;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 0.4s;
+
+            &:hover {
+                cursor: pointer;
+                transform: rotate(15deg) scale(1.2);
+            }
+
+        }
+    }
+}
+
+.modal-thanks {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    &__wrapper {
+        padding: 40px 45px;
+        max-width: 500px;
+        background-color: white;
+        text-align: center;
+    }
+    &__description {
+    @include font(14px, 600, 0.03em);
+    font-style: normal;
+    line-height: 26px;
+    color: #4f4f4f;
+    margin-bottom: 40px;
+
+    }
+    &__btn {
+        width: 100%;
+    }
+
+    &__title {
+        @include font(21px, 700, 1.1, none, );
+        color: $color-black;
+        text-align: center;
+        margin: 24px 0 27px;
+        position: relative;
+    }
+}

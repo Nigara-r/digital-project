@@ -52,7 +52,22 @@
 
     .footer__foot {
         @include font(12px, 400);
-        margin-top: 25px;
+        padding: 25px;
         text-align: center;
         color: #C8C8C8;
     }
+
+
+@media screen and (max-width: 576px) {
+    .footer {
+      &__logo {
+          margin-bottom: 20px;
+      }
+      &__item {
+          justify-content: flex-start;
+      }    
+      &__title1 {
+text-align: center;
+      }
+ }
+}
